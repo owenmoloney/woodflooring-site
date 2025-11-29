@@ -5,12 +5,19 @@ import Contact from "./components/Contact";
 
 const App = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-50 via-white to-gray-100 text-gray-900 font-sans">
-      <header className="sticky top-0 z-20 bg-white/80 backdrop-blur border-b border-gray-200">
-        <div className="max-w-6xl mx-auto flex items-center justify-between px-6 py-4">
-          <span className="text-lg font-semibold tracking-tight">
-            Woodflooring NYC
-          </span>
+    <div className="font-sans text-gray-900 bg-gradient-to-b from-gray-50 via-white to-gray-100">
+      {/* Top black bar with address and phone */}
+      <div className="bg-black text-white text-sm py-2">
+        <div className="max-w-6xl mx-auto px-6 flex justify-between">
+          <span>123 Main St, NYC</span>
+          <span>(555) 123-4567</span>
+        </div>
+      </div>
+
+      {/* Navbar */}
+      <header className="bg-white border-b border-gray-200">
+        <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+          <span className="text-lg font-semibold tracking-tight">Woodflooring NYC</span>
           <nav className="hidden md:flex gap-6 text-sm font-medium text-gray-700">
             <a href="#services" className="hover:text-amber-600">
               Services
@@ -22,7 +29,7 @@ const App = () => {
         </div>
       </header>
 
-      <main className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-20">
+      <main className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-32">
         <Hero />
         <Services />
         <Contact />
