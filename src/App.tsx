@@ -2,6 +2,8 @@
 import Hero from "./components/Hero";
 import Services from "./components/Services";
 import Contact from "./components/Contact";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
@@ -15,19 +17,7 @@ const App = () => {
       </div>
 
       {/* Navbar */}
-      <header className="bg-white border-b border-gray-200">
-        <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-          <span className="text-lg font-semibold tracking-tight">Woodflooring NYC</span>
-          <nav className="hidden md:flex gap-6 text-sm font-medium text-gray-700">
-            <a href="#services" className="hover:text-amber-600">
-              Services
-            </a>
-            <a href="#contact" className="hover:text-amber-600">
-              Contact
-            </a>
-          </nav>
-        </div>
-      </header>
+      <Navbar />
 
       <main className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-32">
         <Hero />
@@ -35,11 +25,7 @@ const App = () => {
         <Contact />
       </main>
 
-      <footer className="mt-16 border-t border-gray-200 bg-white/80">
-        <div className="max-w-6xl mx-auto px-6 py-6 text-sm text-gray-500 text-center">
-          © {new Date().getFullYear()} Woodflooring NYC. All rights reserved.
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 };
