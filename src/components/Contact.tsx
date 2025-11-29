@@ -1,29 +1,25 @@
-// src/components/Contact.tsx
-
 const Contact = () => {
   return (
-    <section id="contact" className="py-20 bg-gray-100 text-center">
-      <h2 className="text-4xl font-bold mb-12 text-gray-900">Get in Touch</h2>
-      <form className="max-w-2xl mx-auto flex flex-col gap-6 px-6">
+    <section className="py-24 bg-gray-50">
+      <h2 className="text-4xl font-bold text-center mb-16 text-gray-900">
+        Contact Us
+      </h2>
+      <form className="max-w-3xl mx-auto bg-white p-10 rounded-3xl shadow-xl space-y-6">
         <input
           type="text"
           placeholder="Your Name"
-          className="p-4 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-amber-500"
+          className="w-full border border-gray-300 p-4 rounded-lg focus:ring-2 focus:ring-amber-500 focus:outline-none transition"
         />
         <input
           type="email"
           placeholder="Your Email"
-          className="p-4 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-amber-500"
+          className="w-full border border-gray-300 p-4 rounded-lg focus:ring-2 focus:ring-amber-500 focus:outline-none transition"
         />
         <textarea
           placeholder="Your Message"
-          rows={5}
-          className="p-4 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-amber-500"
-        ></textarea>
-        <button
-          type="submit"
-          className="bg-amber-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-amber-600 transition"
-        >
+          className="w-full border border-gray-300 p-4 rounded-lg h-40 focus:ring-2 focus:ring-amber-500 focus:outline-none transition"
+        />
+        <button className="bg-amber-600 text-white px-8 py-4 rounded-xl shadow-lg hover:bg-amber-700 transition-all duration-300">
           Send Message
         </button>
       </form>
