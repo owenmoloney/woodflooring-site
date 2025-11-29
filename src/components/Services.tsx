@@ -1,4 +1,3 @@
-import React from "react";
 
 const services = [
   { title: "Installation", desc: "High-quality hardwood & laminate installation." },
